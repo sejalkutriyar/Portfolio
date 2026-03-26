@@ -17,7 +17,7 @@ const About: React.FC = () => {
     { icon: <Layout />, label: "UI/UX Design" },
     { icon: <BookOpen />, label: "Continuous Learning" },
     { icon: <Camera />, label: "Photography" },
-    { icon: <Coffee />, label: "Coffee Lover" },
+    { icon: <Code />, label: "Code Debugger" },
   ];
 
   return (

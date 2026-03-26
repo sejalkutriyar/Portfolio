@@ -63,9 +63,13 @@ const Hero: React.FC = () => {
                 Contact Me
               </a>
               
-              <a href="#" className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium px-4 py-3 rounded-full transition-colors cursor-pointer underline-offset-4 hover:underline">
+              <a href="https://drive.google.com/file/d/1qLjHHIizL8DfVOB1I-cmOShGBR_yDhtN/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium px-4 py-3 rounded-full transition-colors cursor-pointer underline-offset-4 hover:underline">
                 <Download size={18} />
-                Download Resume
+                Frontend Resume
+              </a>
+              <a href="https://drive.google.com/file/d/10TEOK8AyYZ-4b4dq2QOzUDsf4_bDe2I_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-medium px-4 py-3 rounded-full transition-colors cursor-pointer underline-offset-4 hover:underline">
+                <Download size={18} />
+                MERN Resume
               </a>
             </motion.div>
 

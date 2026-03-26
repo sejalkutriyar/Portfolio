@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
           transition={{ duration: 0.5 }}
         >
           <Code2 size={24} />
-          <span>DevPortfolio</span>
+          <span>Sejal</span>
         </motion.a>
 
         {/* Desktop Menu */}

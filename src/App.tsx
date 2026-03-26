@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
+
 import InitialLoader from './components/InitialLoader';
 import { AnimatePresence } from 'framer-motion';
 
@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen font-sans selection:bg-primary-500/30">
-      <CustomCursor />
+
       
       <AnimatePresence mode="wait">
         {loading && <InitialLoader key="loader" />}

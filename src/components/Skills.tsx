@@ -20,8 +20,8 @@ const Skills: React.FC = () => {
       title: "Frontend Development",
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "React / Vite", level: 90 },
-        { name: "TypeScript", level: 85 },
+        { name: "React / React Native", level: 90 },
+        { name: "JavaScript / TypeScript", level: 85 },
         { name: "Tailwind CSS", level: 95 },
         { name: "Next.js", level: 80 },
         { name: "Framer Motion", level: 75 }
@@ -31,10 +31,10 @@ const Skills: React.FC = () => {
       title: "Backend Development",
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express", level: 80 },
-        { name: "Python", level: 70 },
-        { name: "PostgreSQL", level: 75 },
+        { name: "Node.js & Express", level: 85 },
+        { name: "Python", level: 80 },
+        { name: "Java / Go", level: 70 },
+        { name: "PostgreSQL / SQL", level: 75 },
         { name: "MongoDB", level: 80 }
       ]
     },
@@ -42,11 +42,11 @@ const Skills: React.FC = () => {
       title: "Tools & AI Architecture",
       color: "from-purple-500 to-fuchsia-500",
       skills: [
-        { name: "Git & GitHub", level: 90 },
-        { name: "Docker", level: 65 },
-        { name: "AWS", level: 60 },
-        { name: "LangChain", level: 70 },
-        { name: "Figma", level: 85 }
+        { name: "AI & Machine Learning", level: 75 },
+        { name: "LangChain / LlamaIndex", level: 70 },
+        { name: "Git / GitLab", level: 85 },
+        { name: "AWS & Docker", level: 65 },
+        { name: "Postman & Figma", level: 80 }
       ]
     }
   ];
