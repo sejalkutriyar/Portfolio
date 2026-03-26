@@ -1,4 +1,4 @@
-import { Heart, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
@@ -31,12 +31,8 @@ const Footer: React.FC = () => {
           <a href="#contact" className="hover:text-white transition-colors">Contact</a>
         </nav>
 
-        <div className="flex flex-col items-center gap-2 text-sm">
-          <p className="flex items-center gap-1">
-            Built with <Heart size={14} className="text-red-500 fill-current" /> by 
-            <span className="text-white font-semibold">Sejal Kumari</span>
-          </p>
-          <p>&copy; {currentYear} All rights reserved.</p>
+        <div className="flex flex-col items-center text-slate-500 text-sm">
+          <p>&copy; {currentYear} Sejal. All rights reserved.</p>
         </div>
         
       </div>
