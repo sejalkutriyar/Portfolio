@@ -20,33 +20,33 @@ const Skills: React.FC = () => {
       title: "Frontend Development",
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "React / React Native", level: 90 },
-        { name: "JavaScript / TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Next.js", level: 80 },
-        { name: "Framer Motion", level: 75 }
+        { name: "React / React Native", level: 98 },
+        { name: "JavaScript / TypeScript", level: 97 },
+        { name: "Tailwind CSS", level: 99 },
+        { name: "Next.js", level: 96 },
+        { name: "Framer Motion", level: 95 }
       ]
     },
     {
       title: "Backend Development",
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "Node.js & Express", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "Java / Go", level: 70 },
-        { name: "PostgreSQL / SQL", level: 75 },
-        { name: "MongoDB", level: 80 }
+        { name: "Node.js & Express", level: 98 },
+        { name: "Python", level: 95 },
+        { name: "Java / Go", level: 96 },
+        { name: "PostgreSQL / SQL", level: 97 },
+        { name: "MongoDB", level: 99 }
       ]
     },
     {
       title: "Tools & AI Architecture",
       color: "from-purple-500 to-fuchsia-500",
       skills: [
-        { name: "AI & Machine Learning", level: 75 },
-        { name: "LangChain / LlamaIndex", level: 70 },
-        { name: "Git / GitLab", level: 85 },
-        { name: "AWS & Docker", level: 65 },
-        { name: "Postman & Figma", level: 80 }
+        { name: "AI & Machine Learning", level: 96 },
+        { name: "LangChain / LlamaIndex", level: 97 },
+        { name: "Git / GitLab", level: 99 },
+        { name: "AWS & Docker", level: 95 },
+        { name: "Postman & Figma", level: 98 }
       ]
     }
   ];

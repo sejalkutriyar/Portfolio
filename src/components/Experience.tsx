@@ -5,39 +5,62 @@ import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Full Stack Developer Intern",
-      company: "TechNova Solutions",
-      date: "Jun 2024 - Present",
+      title: "Tech Community Leader & Organizer",
+      company: "Various Developer Communities",
+      date: "2024 - Present",
+      location: "On-Campus / Remote",
+      type: "experience",
+      points: [
+        "Led peer-to-peer coding sessions, mentoring junior students in full-stack web development.",
+        "Organized and managed tech workshops, hackathons, and coding bootcamps on campus.",
+        "Fostered a collaborative environment to actively discuss system design and algorithmic problem-solving."
+      ]
+    },
+    {
+      title: "Freelance Web Developer",
+      company: "Client Projects",
+      date: "2024 - Present",
       location: "Remote",
       type: "experience",
       points: [
-        "Developed scalable REST APIs using Node.js and Express.",
-        "Integrated secure JWT authentication and role-based access control.",
-        "Designed and implemented interactive user interfaces using React and Tailwind CSS."
+        "Designed and developed responsive, high-performance web applications tailored to specific client requirements.",
+        "Communicated actively with clients to gather requirements, provide technical consultations, and deliver MVPs on time.",
+        "Handled end-to-end deployment, ensuring cross-browser compatibility and optimized web-vitals."
       ]
     },
     {
-      title: "Bachelor of Technology in Computer Science",
-      company: "University Institute of Technology",
-      date: "Aug 2021 - May 2025",
-      location: "City, State",
-      type: "education",
-      points: [
-        "CGPA: 8.8/10",
-        "Core coursework: Data Structures, Algorithms, Database Management Systems, Computer Networks.",
-        "Lead the college technical society and organized coding bootcamps."
-      ]
-    },
-    {
-      title: "Frontend Developer Trainee",
-      company: "CodePioneer Labs",
-      date: "Jan 2023 - May 2023",
-      location: "Hybrid",
+      title: "Open Source Contributor",
+      company: "GSoC, Outreachy, GSSoC & SOB",
+      date: "2024 - Present",
+      location: "Remote",
       type: "experience",
       points: [
-        "Built responsive landing pages using modern HTML, CSS, and vanilla JS.",
-        "Collaborated with designers to ensure pixel-perfect implementation of Figma designs.",
-        "Optimized web apps for performance, resulting in a 20% increase in load speed."
+        "Actively contributing to prestigious open-source programs including Google Summer of Code (GSoC), Outreachy, GirlScript Summer of Code (GSSoC), and Summer of Bitcoin (SOB).",
+        "Collaborating with global developers to understand large-scale codebases, resolving complex issues, and reviewing pull requests.",
+        "Gaining hands-on experience with advanced Git workflows, project architecture, and agile development pipelines."
+      ]
+    },
+    {
+      title: "Competitive Programmer & Hackathon Enthusiast",
+      company: "20+ Hackathons",
+      date: "2024 - Present",
+      location: "Various Locations",
+      type: "experience",
+      points: [
+        "Participated in over 20 hackathons, rapidly conceptualizing and building full-stack MVPs under strict time constraints.",
+        "Collaborated with cross-functional teams to brainstorm innovative tech solutions and pitch ideas to industry judges.",
+        "Strengthened problem-solving skills and ability to quickly learn and implement new libraries and APIs on the fly."
+      ]
+    },
+    {
+      title: "Bachelor of Technology",
+      company: "Polaris School of Technology",
+      date: "2024 - 2028",
+      location: "India",
+      type: "education",
+      points: [
+        "Focusing deeply on AI/ML, Full-Stack Web Development, Data Structures, Algorithms, and Core Computer Science concepts.",
+        "Participating in peer-to-peer programming sessions, technical workshops, and coding community events."
       ]
     }
   ];

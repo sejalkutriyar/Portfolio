@@ -87,13 +87,22 @@ const Contact: React.FC = () => {
           <div className="lg:col-span-3 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Send Me A Message</h3>
             
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              const name = formData.get('name') || '';
+              const subject = formData.get('subject') || 'Portfolio Contact';
+              const message = formData.get('message') || '';
+              window.location.href = `mailto:seju020322@gmail.com?subject=${encodeURIComponent(subject as string)} - from ${encodeURIComponent(name as string)}&body=${encodeURIComponent(message as string)}`;
+            }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-slate-300">Your Name</label>
                   <input 
                     type="text" 
                     id="name" 
+                    name="name"
+                    required
                     placeholder="John Doe"
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all dark:text-white"
                   />
@@ -103,6 +112,8 @@ const Contact: React.FC = () => {
                   <input 
                     type="email" 
                     id="email" 
+                    name="email"
+                    required
                     placeholder="john@example.com"
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all dark:text-white"
                   />
@@ -114,6 +125,8 @@ const Contact: React.FC = () => {
                 <input 
                   type="text" 
                   id="subject" 
+                  name="subject"
+                  required
                   placeholder="Hello!"
                   className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all dark:text-white"
                 />
@@ -123,6 +136,8 @@ const Contact: React.FC = () => {
                 <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-slate-300">Message</label>
                 <textarea 
                   id="message" 
+                  name="message"
+                  required
                   rows={5}
                   placeholder="I'd like to talk about..."
                   className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none dark:text-white"
@@ -130,6 +145,7 @@ const Contact: React.FC = () => {
               </div>
 
               <motion.button 
+                type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full py-4 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-lg shadow-lg shadow-primary-500/30 flex items-center justify-center gap-2 transition-colors cursor-pointer"

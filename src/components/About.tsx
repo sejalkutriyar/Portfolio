@@ -1,5 +1,5 @@
 import { motion, type Variants } from 'framer-motion';
-import { Code, Server, Layout, Camera, BookOpen, Coffee } from 'lucide-react';
+import { Code, Server, Layout, Camera, BookOpen } from 'lucide-react';
 
 const About: React.FC = () => {
   const scrollVariants: Variants = {
